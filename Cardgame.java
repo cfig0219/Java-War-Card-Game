@@ -10,7 +10,7 @@ public class Cardgame
     private static List<String> suits = 
         new ArrayList<>(List.of("Spades", "Clubs", "Hearts", "Diamonds"));
     private static List<String> ranks = 
-        new ArrayList<>(List.of("1", "2", "3", "4", "5", "6", "7", "8", 
+        new ArrayList<>(List.of("2", "3", "4", "5", "6", "7", "8", 
         						"9", "10", "Jack", "Queen", "King", "Ace"));
     
     // function to select cards
@@ -65,7 +65,7 @@ public class Cardgame
     public static void main(String []args)
     {
         // player cards selection
-        String[] playerCards = playerCards();
+        /** String[] playerCards = playerCards();
         String player1 = playerCards[0];
         String player2 = playerCards[1];
         
@@ -73,6 +73,13 @@ public class Cardgame
         String winner = determineWinner(player1, player2);
         System.out.println("Player 1 Card: " + player1);
         System.out.println("Player 2 Card: " + player2);
-        System.out.println("Winner: " + winner);
+        System.out.println("Winner: " + winner); **/
+
+        List<Card> cards = new ArrayList<>();
+        cards.add(new Card(Card.Suits.DIAMONDS, Card.Ranks.ACE));
+        System.out.println(cards.toString());
+
+        cards.add(new Card(Card.Suits.SPADES, Card.Ranks.JOKER));
+        System.out.println(cards.toString());
     }
 };
