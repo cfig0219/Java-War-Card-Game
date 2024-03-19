@@ -70,7 +70,7 @@ public class Card implements Comparable<Card> {
     @Override
     public String toString() {
         String cardString = "";
-        cardString += rankToString.get(this.rank) + " of " + suitToString.get(this.suit);
+        cardString += rankToString.get(this.rank) + " of " + suitToString.get(this.suit) + "\n";
         return cardString;
     }
 

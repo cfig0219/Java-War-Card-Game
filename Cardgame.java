@@ -80,7 +80,7 @@ public class Cardgame
         System.out.println("Simple Card Game Output: ");
         System.out.println("Player 1 Card: " + player1);
         System.out.println("Player 2 Card: " + player2);
-        System.out.println("Winner: " + winner);
+        System.out.println("Winner: " + winner + '\n');
 
         /**
          Prints out the output of the complex module-based card
@@ -89,6 +89,13 @@ public class Cardgame
          **/
         System.out.println("Complex Card Game Output: ");
         Deck testDeck = new Deck();
-        testDeck.printCards();
+
+        List<Card> drawnCards = testDeck.drawCards(17); // Draw 5 cards
+        // Print the drawn cards
+        System.out.println(drawnCards.toString());
+        testDeck.printDeck();
+        // resets cards
+        testDeck.shuffleCards();
+        testDeck.printDeck();
     }
 };
