@@ -4,12 +4,6 @@ import java.util.List;
 // import for random value selection
 import java.util.Random;
 
-/**
- The Cardgame.java program represents a simple one-file implementation of 
- the War card game. The "main" program function tests the implementation of 
- this program and the other more module-based multi-file Card game program. 
- **/
-
 public class Cardgame
 {
     // card list variables
@@ -81,14 +75,5 @@ public class Cardgame
         System.out.println("Player 1 Card: " + player1);
         System.out.println("Player 2 Card: " + player2);
         System.out.println("Winner: " + winner);
-
-        /**
-         Prints out the output of the complex module-based card
-         program. This other implementation is meant to be 
-         adaptable into other card game configurations. 
-         **/
-        System.out.println("Complex Card Game Output: ");
-        Deck testDeck = new Deck();
-        testDeck.printCards();
     }
 };
